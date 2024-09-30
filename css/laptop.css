@@ -1,12 +1,106 @@
 body{
     background-color: black;
+    color: white;
+    background: -moz-linear-gradient(top, black 0%, blue 100%);
+    background: -webkit-linear-gradient(top,black 0%, blue 100% );
+    background: -o-linear-gradient(top, black 0%, blue 100%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
-.navBar{
-   
+#wrapper{
+    height: 1024px;
+    
 }
-.navBarTopRight{
+
+.headerContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    background-color: red;
+    
+}
+ .navBar{
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-block;
+    width: 100%;
+   background-color: red;
+   padding: 0px 10px;
+
+}
+.navBar h1{
+    margin-left: 10px;
+    justify-content:space-between;
+}
+
+.navBar ul{
+    display: flex;
     float: right;
+    list-style: none;
+    margin-left: auto;
+    padding: 0;
+    top: 50%
+
+}
+.navBar li{
+    float: right;
+    top: 50%
+}
+.navButton{
+    background-color: black;
     color: white;
+    cursor: pointer;
+    padding: 5px 15px;
+    border: none;
+    font-size: xx-large;
+
+    
+}
+
+.navButton:hover{
+    background-color: silver;
+}
+
+.homepageContainer{
+    align-items: center;
+    position: relative;
+    z-index: 1;
     text-align: center;
+
+}
+
+#box {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    padding: 20px;
+}
+
+.aboutContainer, .projectsContainer, .contactContainer {
+    background-color: white; 
+    padding: 20px;
+    border: 1px;
+    width: 200px; 
+    text-align: center;
+}
+
+.aboutContainer a, .projectsContainer a, .contactContainer a {
+    text-decoration: none;
+    color: black;
+}
+.aboutContainer:hover, .projectsContainer:hover, .contactContainer:hover{
+    background-color: silver;
+    opacity: 3;
+}
+.footerContainer{
+    margin-bottom: auto;
+}
+#footer{
+    background-color: sandybrown;
+    color:white;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
