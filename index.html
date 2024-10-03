@@ -5,7 +5,7 @@
 <head>
     <meta charset='utf-8'>
     <title>Miquela Gonzales Portfolio</title>
-    <link rel='stylesheet' type='text/css' media='screen' href='./css/laptop.css'>
+    <link rel='stylesheet' type='text/css' media='only screen and (min-width:960px)' href='./css/laptop.css'>
     <link href="./css/phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
     <link href="./css/tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 768px)">
 </head>
@@ -21,8 +21,8 @@
                             <ul>
                                 <li><a href="index.html"><button class="navButton">Home</button></a></li>
                                 <li> <a href="aboutme.html"><button class="navButton">About</button></a></li>
-                                <li></li><a href="projects.html"><button class="navButton">Projects</button></a></li>
-                                <li></li><a href="contact.html"><button class="navButton">Contact</button></a></li>
+                                <li><a href="projects.html"><button class="navButton">Projects</button></a></li>
+                                <li><a href="contact.html"><button class="navButton">Contact</button></a></li>
                             </ul>
 
                         
@@ -34,11 +34,16 @@
         <!---Home--->
         <section id="homepage">
             <div class="homepageContainer">
-                <h1>Welcome to my<span></span></h1>
-                <h1>Portfolio</h1>
+                <img src="./image/homeimg.jpg" alt="Image of black and white clouds" width="100%" height="550px">
+                <div class="welcome">
+                    <h1><span>Welcome to My</span></h1>
+                    <h1><span>Portfolio</span></h1>
+                </div>
+                
+
             </div>
         </section>
-
+<!--Boxes-->
         <!--About me Box-->
         <section id="box">
             <div class="aboutContainer">
@@ -54,7 +59,7 @@
                     <h3>Projects</h3>
                 </a>
             </div>
-
+        
             <!--Contact Box-->
             <div class="contactContainer">
                 <a href="contact.html" target="_blank">
@@ -63,13 +68,14 @@
             </div>
         </section>
 
-        <p></p>
+        <div class="clear"></div>
         <!---Footer--->
         <footer id="footer">
             <address>
                 <div class="footerContainer">
                     Contact me at <a
                         href="mailto:miquela.gonzales@ontariotechu.net">miquela.gonzales@ontariotechu.net</a>
+                        <p>©2022 by Miquela Gonzales</p>
                 </div>
             </address>
         </footer>

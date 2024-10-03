@@ -16,50 +16,83 @@
             overflow: hidden;
 
         }
-        .contactBox{
-            align-items: center;
+
+
+
+
+        form{
+          margin-left: 25%;
         }
+
     </style>
+
 </head>
 
 <body>
     <div id="wrapper">
-        <div class="contactBox">
-            <form action="mailto:miquela.gonzales@ontariotechu.net" ?subject="Contact" Form method="post"
-                enctype="text/plain" name="contact">
-                <h1>Contact</h1>
+        <header id="header">
+            <div class="headerContainer">
 
-                <div class="firstName">
-                    <p>First Name </p>
-                    <input type="text" name="name" size="30" placeholder="First Name">
+                <div class="navBar">
+                    <nav>
+                        <h1><span>Miquela Gonzales</span></h1>
+                        <ul>
+                            <li><a href="index.html"><button class="navButton">Home</button></a></li>
+                            <li> <a href="aboutme.html"><button class="navButton">About</button></a></li>
+                            <li></li><a href="projects.html"><button class="navButton">Projects</button></a></li>
+                            <li></li><a href="contact.html"><button class="navButton">Contact</button></a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="lastName">
-                    <p>Last Name </p>
-                    <input type="text" name="name" size="30" placeholder="Last Name">
-                </div>
-
-                <div class="phoneNumber">
-                    <p>Phone Number</p>
-                    <input type="text" name="name" size="32" placeholder="Phone number">
-                </div>
-                <div class="email">
-                    <p>Email</p>
-                    <label for="email"></label>
-                    <input name="" type="email" size="40" placeholder="Email">
-
+            </div>
+        </header>
+        <section>
+            <div class="contactBox">
+                <h1>Contact </h1>
                 </div>
 
-                <p>
-                    <label for="message">Message</label><br>
-                    <textarea name="comments" cols="60" rows="6" placeholder="Enter a Message"></textarea>
-                </p>
+                <form action="mailto:miquela.gonzales@ontariotechu.net" ?subject="Contact" Form method="post"
+                    enctype="text/plain" name="contactForm">
 
-                <p>
+                        <div class="nameBox">
+                            <p>First Name 
+                            <input type="text" required name="name" size="30" placeholder="First Name">
+                           
+                                Last Name 
+                                <input type="text" name="name" size="30" placeholder="Last Name"></p>
+                            </div>
+
+                        <div class="phoneEmail">
+                        <p>Phone Number
+                        <input type="tel" name="phoneNumber" size="32" placeholder="Phone number">
+                     
+                            Email
+                            <label for="email"></label>
+                            <input name="email" type="email" size="40" placeholder="Email"></p>
+                            </div>
+                      
+                            <label for="message">Message</label><br>
+                            <textarea name="comments" cols="60" rows="6" placeholder="Enter a Message"></textarea></p>
+                   
+                   
+
+        
+
+
+<p></p>
+                <div class="contactButtons">
+                
                     <input type="submit" value="Submit">
-                </p>
-                <p><input type="reset" value="Reset"></p>
-            </form>
+   
+               <input type="reset" value="Reset">
+            </div>
         </div>
+    </div>
+            </form>
+    
+        </section>
+    </div>
+    </div>
     </div>
 </body>
 

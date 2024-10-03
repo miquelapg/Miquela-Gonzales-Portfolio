@@ -1,5 +1,28 @@
-#wrapper{
-    height: 1334px;
-    width: 767px;
+@media only screen and (max-width : 480px) {
 
+    body {
+        color: white;
+        background: linear-gradient(45deg, black 0%, aqua 100%);
+        font-family: Georgia, 'Times New Roman', Times, serif
+    }
+
+    #wrapper {
+        height: 1334px;
+        width: 100%;
+
+    }
+
+    h1, h2, h3,h4, h5,  h6,p, li {
+        margin-left: 15px;
+        margin-top: 0px;
+    }
+    #footer {
+        background-color: grey;
+        color: white;
+        height: 80px;
+        align-items: center;
+    }
+    
+    
+   
 }

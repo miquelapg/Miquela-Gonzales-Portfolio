@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset='utf-8'>
     <title>About</title>
@@ -8,16 +9,67 @@
     <link href="./css/phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
     <link href="./css/tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 768px)">
     <style>
-        body{
-           
+        body {
             color: white;
+            background: linear-gradient(top, black 0%, blue 100%)
         }
 
-</style>        
-</head>
-<body>
-    <div></div>
-    <h1>About</h1>
+        .leftCol {
+            float: left;
+            width: 50%;
+            height: 500px;
+            background-color: pink;
 
+        }
+        .leftCol img{
+            border-radius: 25px;
+            margin-left: 250px;
+        }
+
+        .rightCol {
+            float: right;
+            width: 50%;
+            height: 500px;
+            background-color: aqua;
+        }
+        .aboutImage img{
+            justify-content: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div class="headerContainer">
+                <div class="navBar">
+                    <nav>
+                       <h1><span>Miquela Gonzales</span></h1>
+                            <ul>
+                                <li><a href="index.html"><button class="navButton">Home</button></a></li>
+                                <li> <a href="aboutme.html"><button class="navButton">About</button></a></li>
+                                <li><a href="projects.html"><button class="navButton">Projects</button></a></li>
+                                <li><a href="contact.html"><button class="navButton">Contact</button></a></li>
+                            </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        
+        <section>
+            <h1><span>About</span></h1>
+            <div class="leftCol">
+                <div class="aboutImage">
+                    <img src="./image/aboutme.jpg" alt="Image of Miquela Gonzales" img width="260px">
+                    <h2>Hello! My name is Miquela Gonzales and I am a second year Networking and IT Security student at Ontario Tech University.</h2>
+                </div>
+            </div>
+            <div class="rightCol">
+                <h2>Here is a short video about myself</h2>
+            </div>
+    </div>
+    </section>
 </body>
+
 </html>
