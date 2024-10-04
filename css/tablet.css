@@ -1,5 +1,157 @@
-#wrapper{
-    height: 800px;
-    width: 100%;
+@media only screen and (min-width : 481px) and (max-width: 960px) {
+body{
+    background: linear-gradient(top, black 0%, blue 100%);
 
+}
+#wrapper{
+    height:auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    background-color: black;
+
+}
+
+.navBar {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-block;
+    background-color: black;
+    padding: 0px 10px;
+    
+
+}
+
+.navBar h1 {
+    margin-left: 5px;
+    justify-content: space-between;
+    font-size: xx-large;
+}
+
+.navBar ul {
+    display: flex;
+    float: right;
+    list-style: none;
+    padding: 0;
+    top: 50%
+}
+
+.navBar li {
+    float: right;
+    top: 50%
+}
+
+.navButton {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 5px 15px;
+    border: none;
+    font-size: xx-large;
+}
+
+.navButton:hover {
+    background-color: silver;
+}
+
+#homepage{
+    background-color: black;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0px;
+    margin: 0px;
+}
+#box {
+    background-color: black;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     padding: 20px;
+ }
+ 
+ .aboutContainer,
+ .projectsContainer,
+ .contactContainer {
+     background-color: white;
+     padding: 20px;
+     border: 1px;
+     width: 200px;
+     height: 150px;
+     text-align: center;
+     border-radius:50px;
+     
+ }
+ .aboutContainer h3
+ .projectsContainer h3 ,
+ .contactContainer h3  {
+    text-align: center;
+ }
+ 
+ .aboutContainer a,
+ .projectsContainer a,
+ .contactContainer a {
+     text-decoration: none;
+     color: black;
+ }
+ 
+ .aboutContainer:hover,
+ .projectsContainer:hover,
+ .contactContainer:hover {
+     background-color: silver;
+     box-shadow: 10px 10px 5px silver;
+     opacity: 3;
+ }
+ /*End of Homepage*/
+ /*About Me Page*/
+ #aboutmePage .leftCol {
+    float: left;
+    width: 50%;
+    height: 500px;
+}
+#aboutmePage .leftCol img{
+    border-radius: 25px;
+    margin-left: 250px;
+}
+
+#aboutmePage  .rightCol {
+    float: right;
+    width: 50%;
+    height: 500px;
+ 
+}
+#aboutmePage  .aboutImage img{
+    justify-content: center;
+}
+/*End of About Me*/
+
+ /*Footer*/
+ .footerContainer {
+     margin-bottom: auto;
+     align-items: center;
+     text-align: center;
+     background-color: silver;
+ }
+ 
+ #footer {
+     background-color: silver;
+     color: white;
+     height: 80px;
+     align-items: center;
+ }
+ /*End of Footer*/
+ 
+ .clear {
+     clear: both;
+ }
 }

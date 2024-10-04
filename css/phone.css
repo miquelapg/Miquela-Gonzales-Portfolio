@@ -7,22 +7,162 @@
     }
 
     #wrapper {
-        height: 1334px;
         width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
 
     }
-
-    h1, h2, h3,h4, h5,  h6,p, li {
-        margin-left: 15px;
-        margin-top: 0px;
+    /*Homepage */
+    .navBar ul a{
+        text-decoration: none;
     }
+    .navBar ul {
+        text-decoration: none;
+        padding-left: 0;
+    }
+    .navBar li a {
+        text-decoration: none;
+    }
+    .headerContainer, .navBar {
+        flex-direction: column;
+        align-items: center;
+    }
+.navBar{
+    font-size: medium;
+}
+.navButton{
+    text-decoration: none;
+    font-size: small;
+    margin: auto;
+    display: block;
+}
+
+#box{
+    flex-direction: column;
+  
+}
+
+.homepageContainer {
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.welcome{
+    position: absolute;
+    font-size: medium;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#body img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    opacity: 0;
+}
+
+#box {
+   background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.aboutContainer,
+.projectsContainer,
+.contactContainer {
+    background-color: white;
+    padding: 20px;
+    border: 1px;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    border-radius:50px;
+    
+}
+.aboutContainer h3
+.projectsContainer h3 ,
+.contactContainer h3  {
+   text-align: center;
+}
+
+.aboutContainer a,
+.projectsContainer a,
+.contactContainer a {
+    text-decoration: none;
+    color: black;
+}
+
+.aboutContainer:hover,
+.projectsContainer:hover,
+.contactContainer:hover {
+    background-color: silver;
+    box-shadow: 10px 10px 5px silver;
+    opacity: 3;
+}
+/*End of Homepage*/
+
+/*About me Page*/
+
+#aboutmePage .leftCol {
+    float: left;
+    width: 50%;
+    height: 500px;
+}
+#aboutmePage .leftCol img{
+    border-radius: 25px;
+    margin-left: 250px;
+}
+
+#aboutmePage  .rightCol {
+    float: right;
+    width: 50%;
+    height: 500px;
+ 
+}
+#aboutmePage  .aboutImage img{
+    justify-content: center;
+}
+/*End of About Me*/
+
+#projects .projectItems{
+    color: white;
+}
+#projects .projectContainer h2{
+    text-align: center;
+}
+#projects .projectContainer h4 {
+    margin-left: 40px;
+}
+#projects .projectContainer h1{
+    margin-left: 15px;
+}
+#projects img{
+    align-items: center;
+    margin: auto;
+    display: block;
+    width: 50%;
+}
+#projects #pythonImg {
+    align-items: center;
+    margin: auto;
+    display: block;
+    width: 25%;
+}
+
     #footer {
         background-color: grey;
         color: white;
         height: 80px;
         align-items: center;
+        height: auto;
+        padding: 10px;
     }
-    
     
    
 }
