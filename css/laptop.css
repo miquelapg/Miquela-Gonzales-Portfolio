@@ -35,7 +35,7 @@ body {
     display: inline-block;
     background-color: black;
     padding: 0px 10px;
-    opacity: 3;
+   
 
 }
 
@@ -50,12 +50,12 @@ body {
     float: right;
     list-style: none;
     padding: 0;
-    top: 50%
+   
 }
 
 .navBar li {
     float: right;
-    top: 50%
+   
 }
 
 .navButton {
@@ -80,17 +80,17 @@ body {
 }
 .welcome{
     position: absolute;
-    font-size: xx-large;
+    font-size: x-large;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
 
-#body img{
+#homepage img{
     width: 100%;
     object-fit: cover;
-    height: 100%;
-    opacity: 0;
+   
+   
 }
 /*Homepage Boxes*/
 #box {
@@ -107,10 +107,10 @@ body {
     background-color: white;
     padding: 20px;
     border: 1px;
-    width: 200px;
-    height: 150px;
+    width: 150px;
+    height: 120px;
     text-align: center;
-    border-radius:50px;
+    border-radius:35px;
     
 }
 .aboutContainer h3
@@ -130,13 +130,77 @@ body {
 .projectsContainer:hover,
 .contactContainer:hover {
     background-color: silver;
-    box-shadow: 10px 10px 5px silver;
+    box-shadow: 4px 4px 5px silver;
     opacity: 3;
+}
+/*About me Page*/
+
+.aboutLeft{
+    float: left;
+    width: 50%;
+    justify-content: center;
+}
+.aboutLeft img{
+    border-radius: 100px;
+}
+.aboutRight{
+    float: right;
+    width: 50%;
+    justify-content: center;
+}
+/*End of About Me*/
+
+/*Projects Page*/
+#projects .projectItems{
+    color: white;
+}
+#projects .projectContainer h2{
+    text-align: center;
+}
+#projects .projectContainer h4 {
+    margin-left: 40px;
+}
+#projects .projectContainer h1{
+    margin-left: 15px;
+}
+#projects img{
+    align-items: center;
+    margin: auto;
+    display: block;
+    width: 60%;
+}
+#projects #pythonImg {
+    align-items: center;
+    margin: auto;
+    display: block;
+    width: 40%;
+}
+/*End of Projects Page*/
+#contact body {
+    color: white;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+#contact .contactBox {
+    margin-left: 25px;
+}
+
+
+#contact form {
+
+    align-content: center;
+    margin-left: auto;
+}
+.phoneEmail, .contactButtons, .nameBox{
+    align-items: center;
 }
 
 /*Footer*/
 .footerContainer {
-    margin-bottom: auto;
+    
     align-items: center;
     text-align: center;
     background-color: silver;
@@ -145,7 +209,7 @@ body {
 #footer {
     background-color: silver;
     color: white;
-    height: 80px;
+    height: 60px;
     align-items: center;
 }
 /*End of Footer*/

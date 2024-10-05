@@ -7,34 +7,14 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='only screen and (min-width:960px)' href='./css/laptop.css'>
     <link href="./css/phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
-    <link href="./css/tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 481px) and (max-width: 960px)">
+    <link href="./css/tablet.css" rel="stylesheet" type="text/css"
+        media="only screen and (min-width: 481px) and (max-width: 960px)">
     <style>
-        body {
-            color: white;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-
-        }
-.contactBox{
-    margin-left: 25px;
-}
-.nameBox{
-    justify-content: space-between;
-
-}
-
-form{
-          margin-left: auto;
-        }
-        .contactButtons{
-            align-items: center;
-        }
 
     </style>
 </head>
 
-<body>
+<body id = "contact">
     <div id="wrapper">
         <header id="header">
             <div class="headerContainer">
@@ -55,47 +35,60 @@ form{
         <section>
             <div class="contactBox">
                 <h1>Contact </h1>
+            </div>
+
+            <form action="mailto:miquela.gonzales@ontariotechu.net" ?subject="Contact" Form method="post"
+                enctype="text/plain" name="contactForm">
+
+                <div class="nameBox">
+
+                    <p>First Name
+                        <input type="text" required name="firstName" size="30" placeholder="First Name">
+
+                        Last Name
+                        <input type="text" required name="lastName" size="30" placeholder="Last Name">
+                    </p>
                 </div>
 
-                <form action="mailto:miquela.gonzales@ontariotechu.net" ?subject="Contact" Form method="post"
-                    enctype="text/plain" name="contactForm">
+                <div class="phoneEmail">
+                    <p>Phone Number
+                        <input type="tel" required name="phoneNumber" size="30" placeholder="Phone number">
 
-                        <div class="nameBox">
-                        
-                            <p>First Name 
-                            <input type="text" required name="firstName" size="30" placeholder="First Name">
-                            
-                                Last Name 
-                                <input type="text" required name="lastName" size="30" placeholder="Last Name"></p>
-                            </div>
+                        Email
+                        <label for="email"></label>
+                        <input name="email" type="email" size="30" placeholder="Email" required>
+                    </p>
+                </div>
 
-                        <div class="phoneEmail">
-                        <p>Phone Number
-                        <input type="tel" required name="phoneNumber" size="32" placeholder="Phone number">
-                     
-                            Email
-                            <label for="email"></label>
-                            <input name="email" type="email" size="40" placeholder="Email" required></p>
-                            </div>
-                      
-                           <p> <label for="message">Message</label><br></p> 
-                            <textarea name="comments" cols="90" rows="9" placeholder="Enter a Message"></textarea></p>
+                <p> <label for="message">Message</label><br></p>
+                <textarea name="comments" cols="90" rows="9" placeholder="Enter a Message"></textarea></p>
 
-<p></p>
+                <p></p>
                 <div class="contactButtons">
-                
-               <input type="reset" value="Reset">
+
+                    <input type="reset" value="Reset">
                     <input type="submit" value="Submit">
-   
+
+                </div>
+    </div>
+    </div>
+    </form>
+
+    </section>
+    </div>
+    </div>
+    </div>
+    <div class="clear"></div>
+    <!---Footer--->
+    <footer id="footer">
+        <address>
+            <div class="footerContainer">
+                Contact me at <a
+                    href="mailto:miquela.gonzales@ontariotechu.net">miquela.gonzales@ontariotechu.net</a>
+                    <p>©2022 by Miquela Gonzales</p>
             </div>
-        </div>
-    </div>
-            </form>
-    
-        </section>
-    </div>
-    </div>
-    </div>
+        </address>
+    </footer>
 </body>
 
 </html>

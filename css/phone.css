@@ -20,26 +20,39 @@
     .navBar ul {
         text-decoration: none;
         padding-left: 0;
+        list-style: none;
+       
+
     }
     .navBar li a {
         text-decoration: none;
     }
     .headerContainer, .navBar {
         flex-direction: column;
-        align-items: center;
+        
     }
 .navBar{
     font-size: medium;
+    flex-direction: column;
+    background-color: black;
 }
 .navButton{
     text-decoration: none;
-    font-size: small;
+    font-size: medium;
     margin: auto;
     display: block;
+    background-color: black;
+    color: white;
+}
+
+.navButton:hover {
+    background-color: silver;
 }
 
 #box{
     flex-direction: column;
+    justify-items:center ;
+    
   
 }
 
@@ -51,7 +64,7 @@
 }
 .welcome{
     position: absolute;
-    font-size: medium;
+    font-size: small;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -78,11 +91,13 @@
 .contactContainer {
     background-color: white;
     padding: 20px;
-    border: 1px;
-    width: 200px;
-    height: 150px;
+    border: 100px;
+    width: 60%;
+    height: auto;
     text-align: center;
-    border-radius:50px;
+    border-radius:25px;
+    justify-content: space-between;
+    margin-bottom: 20px;
     
 }
 .aboutContainer h3
@@ -102,8 +117,8 @@
 .projectsContainer:hover,
 .contactContainer:hover {
     background-color: silver;
-    box-shadow: 10px 10px 5px silver;
-    opacity: 3;
+    box-shadow: 4px 4px 5px silver;
+   
 }
 /*End of Homepage*/
 
@@ -115,8 +130,10 @@
     height: 500px;
 }
 #aboutmePage .leftCol img{
-    border-radius: 25px;
+    border-radius: 100px;
     margin-left: 250px;
+    justify-content: center;
+    align-content: center;
 }
 
 #aboutmePage  .rightCol {
@@ -128,8 +145,14 @@
 #aboutmePage  .aboutImage img{
     justify-content: center;
 }
+#aboutmePage video{
+    height: auto;
+    width: auto;
+margin-bottom: 5px;
+}
 /*End of About Me*/
 
+/*Projects Page*/
 #projects .projectItems{
     color: white;
 }
@@ -154,7 +177,31 @@
     display: block;
     width: 25%;
 }
+/*End of Projects Page*/
+#contact body {
+    color: white;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 
+}
+
+#contact .contactBox {
+    margin-left: 25px;
+}
+
+#contact .nameBox {
+    justify-content: space-between;
+
+}
+#contact form {
+    margin-left: auto;
+}
+
+#contact .contactButtons {
+    align-items: center;
+}
+/*End of Contact Page*/
     #footer {
         background-color: grey;
         color: white;
