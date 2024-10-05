@@ -2,7 +2,7 @@
 
     body {
         color: white;
-        background: linear-gradient(45deg, black 0%, aqua 100%);
+        background: linear-gradient(45deg, black 0%, aqua 100%); /*angle linear gradient*/
         font-family: Georgia, 'Times New Roman', Times, serif
     }
 
@@ -11,7 +11,6 @@
         height: auto;
         margin-left: auto;
         margin-right: auto;
-
     }
     /*Header */
     .navBar ul a{
@@ -72,7 +71,6 @@
 #body img{
     width: 100%;
     object-fit: cover;
-    height: 100%;
     opacity: 0;
 }
 
@@ -122,27 +120,12 @@
 /*End of Homepage*/
 
 /*About me Page*/
-#aboutmePage .leftCol {
-    float: left;
-    width: 50%;
-    height: 500px;
-}
-#aboutmePage .leftCol img{
-    border-radius: 100px;
-    margin-left: 250px;
-    justify-content: center;
-    align-content: center;
-}
 
-#aboutmePage .rightCol {
-    float: right;
-    width: 50%;
-    height: 500px;
- 
-}
 .aboutLeft img{
+    display: flex;
     border-radius: 100px;
     justify-content: center;
+    align-items: center;
     width: 50%;
 }
 .aboutRight video{
@@ -159,21 +142,20 @@
 #projects .projectContainer h2{
     text-align: center;
 }
-#projects .projectContainer h4 {
-    margin-left: 40px;
-}
+
 #projects .projectContainer h1{
     margin-left: 15px;
 }
+#projects .projectContainer h3{
+    margin-left: 25px;
+}
 #projects img{
     align-items: center;
-  
     display: block;
     width: 100%;
 }
 #projects #pythonImg {
     align-items: center;
-
     display: block;
     width: 100%;
     margin-bottom: 10px;
@@ -185,8 +167,6 @@
     color: white;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-
 }
 
 #contact .contactBox {
@@ -216,14 +196,14 @@
 /*End of Contact Page*/
 /*Footer*/
 .footerContainer {
-    
     align-items: center;
     text-align: center;
     background-color: silver;
+    color: black;
 }
     #footer {
         background-color: silver;
-        color: white;
+        color: black;
         align-items: center;
         height: auto;
         padding: 10px;

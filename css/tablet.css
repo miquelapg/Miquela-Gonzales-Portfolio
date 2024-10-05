@@ -36,7 +36,7 @@ body{
 .navBar h1 {
     margin-left: 5px;
     justify-content: space-between;
-    font-size:large;
+    font-size:xx-large;
 }
 
 .navBar ul {
@@ -85,7 +85,6 @@ body{
     width: 100%;
     object-fit: cover;
    
-   
 }
 #box {
     background-color: black;
@@ -129,32 +128,28 @@ body{
  }
  /*End of Homepage*/
  /*About Me Page*/
- #aboutmePage .leftCol {
-    float: left;
-    width: 50%;
-    height: 500px;
-}
-#aboutmePage .leftCol img{
-    border-radius: 25px;
-    margin-left: 250px;
-}
-
-#aboutmePage  .rightCol {
-    float: right;
-    width: 50%;
-    height: 500px;
- 
-}
+ .aboutLeft h2 {
+    margin-left: 20px;
+ }
 .aboutLeft img{
     border-radius: 100px;
     justify-content: center;
     align-items: center;
     padding: 20px;
+ 
 }
-.aboutLeft video{
-    margin: auto;
-    height: auto;
+.aboutRight h2 {
+    margin-left: 20px;
+ }
+.aboutRight{
+    align-items: center;
+    justify-content: center;
 }
+.aboutRight video{
+    align-items: center;
+    width: 100%;
+}
+
 /*End of About Me*/
 
 /*Projects Page*/
@@ -164,11 +159,12 @@ body{
 #projects .projectContainer h2{
     text-align: center;
 }
-#projects .projectContainer h4 {
-    margin-left: 40px;
-}
+
 #projects .projectContainer h1{
     margin-left: 15px;
+}
+#projects .projectContainer h3{
+    margin-left: 25px;
 }
 #projects img{
     align-items: center;
@@ -188,8 +184,6 @@ body{
     color: white;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-
 }
 
 #contact .contactBox {
@@ -197,10 +191,13 @@ body{
 }
 
 #contact form {
-    margin-left: 170px;
+    margin-left: 50px;
+    flex-direction: column;
+    display: block;
 }
 .phoneEmail, .contactButtons, .nameBox{
     display: block;
+    flex-direction: column;
     width: 100%;
     margin-bottom: 10px;
    
@@ -213,16 +210,16 @@ body{
  /*Footer*/
  .footerContainer {
      margin-bottom: auto;
-     align-items: center;
      text-align: center;
      background-color: silver;
      padding: 10px;
+     color: black;
  }
 
  
  #footer {
      background-color: silver;
-     color: white;
+     color: black;
      height: auto;
      align-items: center;
      padding-top: 20px;

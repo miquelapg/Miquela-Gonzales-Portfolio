@@ -23,7 +23,6 @@ body {
     align-items: center;
     padding: 0px 10px;
     background-color: black;
-
 }
 
 .navBar {
@@ -31,12 +30,9 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     display: inline-block;
     background-color: black;
     padding: 0px 10px;
-   
-
 }
 
 .navBar h1 {
@@ -79,6 +75,9 @@ body {
     z-index: 1;
     text-align: center;
 }
+.homepageContainer img{
+  width: 100%;
+}
 .welcome{
     position: absolute;
     font-size: x-large;
@@ -109,7 +108,7 @@ body {
     padding: 20px;
     border: 1px;
     width: 150px;
-    height: 120px;
+    height: 100px;
     text-align: center;
     border-radius:35px;
     
@@ -142,6 +141,7 @@ body {
     justify-content: center;
 }
 .aboutLeft img{
+    margin-left: 70px;
     border-radius: 100px;
     justify-content: center;
    
@@ -151,9 +151,11 @@ body {
     width: 50%;
     justify-content: center;
 }
+
 /*End of About Me*/
 
 /*Projects Page*/
+
 #projects .projectItems{
     color: white;
 }
@@ -166,31 +168,42 @@ body {
 #projects .projectContainer h1{
     margin-left: 15px;
 }
+#projects .left{
+    width: 50%;
+
+    float: left;
+    margin-bottom: 10px;
+}
+#projects .right{
+    width: 50%;
+
+    float: right;
+    margin-bottom: 10px;
+}
 #projects img{
     align-items: center;
     margin: auto;
     display: block;
-    width: 60%;
+    width:100%;
 }
 #projects #pythonImg {
     align-items: center;
     margin: auto;
     display: block;
-    width: 40%;
+    width: 80%;
 }
 /*End of Projects Page*/
+
+/*Contact Page*/
 #contact body {
     color: white;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-
 }
 
 #contact .contactBox {
     margin-left: 25px;
 }
-
 
 #contact form {
     margin-left: 170px;
@@ -199,18 +212,24 @@ body {
 .phoneEmail, .contactButtons, .nameBox{
     align-items: center;
 }
+.contactButtons{
+    margin-bottom: 20px;
+}
+/*End of Contact Page*/
 
 /*Footer*/
 .footerContainer {
-    
+    display: block;
     align-items: center;
     text-align: center;
     background-color: silver;
+
 }
 
 #footer {
+    display: block;
     background-color: silver;
-    color: white;
+    color: black;
     height: 60px;
     align-items: center;
 }
