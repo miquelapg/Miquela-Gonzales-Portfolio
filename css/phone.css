@@ -13,7 +13,7 @@
         margin-right: auto;
 
     }
-    /*Homepage */
+    /*Header */
     .navBar ul a{
         text-decoration: none;
     }
@@ -21,8 +21,6 @@
         text-decoration: none;
         padding-left: 0;
         list-style: none;
-       
-
     }
     .navBar li a {
         text-decoration: none;
@@ -38,22 +36,23 @@
 }
 .navButton{
     text-decoration: none;
-    font-size: medium;
+    font-size:large;
     margin: auto;
     display: block;
     background-color: black;
     color: white;
+    border: none;
+    justify-content: space-between;
+    cursor: pointer;
 }
 
 .navButton:hover {
     background-color: silver;
 }
-
+/*End of Header*/
 #box{
     flex-direction: column;
     justify-items:center ;
-    
-  
 }
 
 .homepageContainer {
@@ -123,7 +122,6 @@
 /*End of Homepage*/
 
 /*About me Page*/
-
 #aboutmePage .leftCol {
     float: left;
     width: 50%;
@@ -136,19 +134,21 @@
     align-content: center;
 }
 
-#aboutmePage  .rightCol {
+#aboutmePage .rightCol {
     float: right;
     width: 50%;
     height: 500px;
  
 }
-#aboutmePage  .aboutImage img{
+.aboutLeft img{
+    border-radius: 100px;
     justify-content: center;
+    width: 50%;
 }
-#aboutmePage video{
+.aboutRight video{
     height: auto;
-    width: auto;
-margin-bottom: 5px;
+    width: 100%
+    
 }
 /*End of About Me*/
 
@@ -167,17 +167,20 @@ margin-bottom: 5px;
 }
 #projects img{
     align-items: center;
-    margin: auto;
+  
     display: block;
-    width: 50%;
+    width: 100%;
 }
 #projects #pythonImg {
     align-items: center;
-    margin: auto;
+
     display: block;
-    width: 25%;
+    width: 100%;
+    margin-bottom: 10px;
 }
 /*End of Projects Page*/
+
+/*Contact Page*/
 #contact body {
     color: white;
     align-items: center;
@@ -188,6 +191,7 @@ margin-bottom: 5px;
 
 #contact .contactBox {
     margin-left: 25px;
+    display: block;
 }
 
 #contact .nameBox {
@@ -196,16 +200,30 @@ margin-bottom: 5px;
 }
 #contact form {
     margin-left: auto;
+    flex-direction: column;
+    align-items: center;
+    display: block;
+
 }
 
-#contact .contactButtons {
+.contactButtons {
     align-items: center;
+    justify-content: space-between;
+        margin-left: 25px;
+        padding-bottom: 20px;
+    
 }
 /*End of Contact Page*/
+/*Footer*/
+.footerContainer {
+    
+    align-items: center;
+    text-align: center;
+    background-color: silver;
+}
     #footer {
-        background-color: grey;
+        background-color: silver;
         color: white;
-        height: 80px;
         align-items: center;
         height: auto;
         padding: 10px;

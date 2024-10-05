@@ -71,6 +71,7 @@ body {
     background-color: silver;
 }
 /*End of Header*/
+
 /*Homepage section*/
 .homepageContainer {
     align-items: center;
@@ -142,6 +143,8 @@ body {
 }
 .aboutLeft img{
     border-radius: 100px;
+    justify-content: center;
+   
 }
 .aboutRight{
     float: right;
@@ -190,9 +193,8 @@ body {
 
 
 #contact form {
-
-    align-content: center;
-    margin-left: auto;
+    margin-left: 170px;
+    
 }
 .phoneEmail, .contactButtons, .nameBox{
     align-items: center;

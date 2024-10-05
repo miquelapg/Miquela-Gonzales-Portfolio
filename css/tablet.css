@@ -11,7 +11,7 @@ body{
     margin-right: auto;
    
 }
-
+/*Header*/
 .headerContainer {
     display: flex;
     justify-content: space-between;
@@ -58,12 +58,13 @@ body{
     cursor: pointer;
     padding: 5px 15px;
     border: none;
-    font-size: small;
+    font-size:large;
 }
 
 .navButton:hover {
     background-color: silver;
 }
+/*End of Header*/
 
 /*Homepage section*/
 .homepageContainer {
@@ -144,14 +145,13 @@ body{
     height: 500px;
  
 }
-#aboutmePage  .aboutImage img{
+.aboutLeft img{
     border-radius: 100px;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
-#aboutmePage video{
-    
+.aboutLeft video{
     margin: auto;
     height: auto;
 }
@@ -181,9 +181,34 @@ body{
     margin: auto;
     display: block;
     width: 25%;
-    margin-bottom: auto;
+    margin-bottom: 10px;
+}
+/*Contacts Page*/
+#contact body {
+    color: white;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
 }
 
+#contact .contactBox {
+    margin-left: 25px;
+}
+
+#contact form {
+    margin-left: 170px;
+}
+.phoneEmail, .contactButtons, .nameBox{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+   
+}
+.contactButtons{
+    padding-bottom: 20px;
+}
+/*End of Contact Page*/
 
  /*Footer*/
  .footerContainer {
@@ -198,8 +223,9 @@ body{
  #footer {
      background-color: silver;
      color: white;
-     height: 80px;
+     height: auto;
      align-items: center;
+     padding-top: 20px;
     
  }
  /*End of Footer*/
