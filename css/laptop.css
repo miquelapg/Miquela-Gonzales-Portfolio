@@ -1,5 +1,6 @@
+@charset "UTF-8";
+/*Laptop/Desktop Viewport*/
 body {
-    
     color: white;
     background: -moz-linear-gradient(top, black 0%, blue 100%);
     background: -webkit-linear-gradient(top, black 0%, blue 100%);
@@ -8,7 +9,6 @@ body {
     padding: 0px;
     margin: 0px;
 }
-
 
 #wrapper {
     width: 960px;
@@ -26,9 +26,7 @@ body {
 }
 
 .navBar {
-    height: 70%;
     width: 100%;
-    display: flex;
     justify-content: space-between;
     display: inline-block;
     background-color: black;
@@ -46,12 +44,6 @@ body {
     float: right;
     list-style: none;
     padding: 0;
-   
-}
-
-.navBar li {
-    float: right;
-   
 }
 
 .navButton {
@@ -61,6 +53,7 @@ body {
     padding: 5px 15px;
     border: none;
     font-size: xx-large;
+    text-decoration: none;
 }
 
 .navButton:hover {
@@ -70,9 +63,7 @@ body {
 
 /*Homepage section*/
 .homepageContainer {
-    align-items: center;
     position: relative;
-    z-index: 1;
     text-align: center;
 }
 .homepageContainer img{
@@ -89,15 +80,13 @@ body {
 #homepage img{
     width: 100%;
     object-fit: cover;
-   
-   
 }
+
 /*Homepage Boxes*/
 #box {
    background-color: black;
     display: flex;
     justify-content: space-around;
-    align-items: center;
     padding: 20px;
 }
 
@@ -106,17 +95,11 @@ body {
 .contactContainer {
     background-color: white;
     padding: 20px;
-    border: 1px;
     width: 150px;
     height: 100px;
     text-align: center;
     border-radius:35px;
     
-}
-.aboutContainer h3
-.projectsContainer h3 ,
-.contactContainer h3  {
-   text-align: center;
 }
 
 .aboutContainer a,
@@ -131,34 +114,30 @@ body {
 .contactContainer:hover {
     background-color: silver;
     box-shadow: 4px 4px 5px silver;
-    opacity: 3;
+   
 }
+/*End of Homepage*/
+
 /*About me Page*/
 
 .aboutLeft{
     float: left;
-    width: 50%;
-    justify-content: center;
+    width: 50%; 
 }
 .aboutLeft img{
     margin-left: 70px;
     border-radius: 100px;
-    justify-content: center;
    
 }
 .aboutRight{
     float: right;
     width: 50%;
-    justify-content: center;
 }
 
 /*End of About Me*/
 
 /*Projects Page*/
 
-#projects .projectItems{
-    color: white;
-}
 #projects .projectContainer h2{
     text-align: center;
 }
@@ -170,13 +149,11 @@ body {
 }
 #projects .left{
     width: 50%;
-
     float: left;
     margin-bottom: 10px;
 }
 #projects .right{
     width: 50%;
-
     float: right;
     margin-bottom: 10px;
 }
@@ -195,11 +172,6 @@ body {
 /*End of Projects Page*/
 
 /*Contact Page*/
-#contact body {
-    color: white;
-    align-items: center;
-    justify-content: center;
-}
 
 #contact .contactBox {
     margin-left: 25px;
@@ -223,18 +195,18 @@ body {
     align-items: center;
     text-align: center;
     background-color: silver;
-
 }
 
 #footer {
     display: block;
     background-color: silver;
     color: black;
-    height: 60px;
+    height: 80px;
     align-items: center;
 }
 /*End of Footer*/
 
-.clear {
+ /*Clears Floats*/
+ .clear {
     clear: both;
 }

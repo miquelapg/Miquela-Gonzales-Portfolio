@@ -20,18 +20,20 @@
         <header id="header">
             <div class="headerContainer">
                 <div class="navBar">
+                    <!--Navigation-->
                     <nav>
                         <h1><span>Miquela Gonzales</span></h1>
                         <ul>
-                            <li><a href="index.html"><button class="navButton">Home</button></a></li>
-                            <li> <a href="aboutme.html"><button class="navButton">About</button></a></li>
-                            <li></li><a href="projects.html"><button class="navButton">Projects</button></a></li>
-                            <li></li><a href="contact.html"><button class="navButton">Contact</button></a></li>
+                            <li><a class="navButton" href="index.html">Home</a></li>
+                            <li> <a class="navButton" href="aboutme.html">About</a></li>
+                            <li><a class="navButton" href="projects.html">Projects</a></li>
+                            <li><a class="navButton" href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
+                    <!--End of Navigation-->
                 </div>
             </div>
-        </header>
+        </header> <!--End of Header-->
 
         <!--Contact-->
         <section>
@@ -39,9 +41,10 @@
                 <h1>Contact </h1>
             </div>
 
+            <!--Form-->
             <form action="mailto:miquela.gonzales@ontariotechu.net" ?subject="Contact" Form method="post"
                 enctype="text/plain" name="contactForm">
-
+                <!--Class containing First and Last Name-->
                 <div class="nameBox">
 
                     <p>First Name
@@ -51,7 +54,9 @@
                         <input type="text" required name="lastName" size="30" placeholder="Last Name">
                     </p>
                 </div>
+                <!--End-->
 
+                <!--Class containing Phone Number and Email-->
                 <div class="phoneEmail">
                     <p>Phone Number
                         <input type="tel" required name="phoneNumber" size="30" placeholder="Phone Number">
@@ -64,29 +69,34 @@
 
                 <p> <label for="message">Message</label><br></p>
                 <textarea name="comments" cols="60" rows="9" placeholder="Enter a Message"></textarea></p>
+                <!--End-->
 
-                <p></p>
+                <p></p> <!--Leaving space between Message and Buttons-->
+
+                <!--Class containing Submit and Reset Buttons-->
                 <div class="contactButtons">
-
                     <input type="reset" value="Reset">
                     <input type="submit" value="Submit">
-
                 </div>
-    
-    </form>
-  
+                <!--End-->
+            </form> 
+            <!--Form End-->
 
-    </section>
-    <div class="clear"></div>
-    <!--Footer-->
-    <footer id="footer">
-        <address>
-            <div class="footerContainer">
-                Contact me at <a href="mailto:miquela.gonzales@ontariotechu.net">miquela.gonzales@ontariotechu.net</a>
-                <p>©2022 by Miquela Gonzales</p>
-            </div>
-        </address>
-    </footer>
+        </section>
+        
+        <div class="clear"></div> <!--Remove Floats-->
+
+        <!--Footer-->
+        <footer id="footer">
+            <address>
+                <div class="footerContainer">
+                    Contact me at <a
+                        href="mailto:miquela.gonzales@ontariotechu.net">miquela.gonzales@ontariotechu.net</a>
+                    <p>©2022 by Miquela Gonzales</p>
+                </div>
+            </address>
+        </footer>
+        <!--End of Footer-->
     </div>
 
 </body>

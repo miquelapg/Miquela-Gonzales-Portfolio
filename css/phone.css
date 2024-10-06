@@ -1,9 +1,9 @@
 @media only screen and (max-width : 480px) {
-
+/*Phone View*/
     body {
         color: white;
         background: linear-gradient(45deg, black 0%, aqua 100%); /*angle linear gradient*/
-        font-family: Georgia, 'Times New Roman', Times, serif
+        font-family: Georgia, 'Times New Roman', Times, serif;
     }
 
     #wrapper {
@@ -13,25 +13,22 @@
         margin-right: auto;
     }
     /*Header */
-    .navBar ul a{
-        text-decoration: none;
-    }
     .navBar ul {
         text-decoration: none;
         padding-left: 0;
         list-style: none;
+        text-align: center;
+       
     }
     .navBar li a {
         text-decoration: none;
     }
-    .headerContainer, .navBar {
-        flex-direction: column;
-        
-    }
+
 .navBar{
-    font-size: medium;
+    font-size: large;
     flex-direction: column;
     background-color: black;
+    display: flex;
 }
 .navButton{
     text-decoration: none;
@@ -43,12 +40,15 @@
     border: none;
     justify-content: space-between;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .navButton:hover {
     background-color: silver;
 }
 /*End of Header*/
+
+/*Homepage Boxes*/
 #box{
     flex-direction: column;
     justify-items:center ;
@@ -68,10 +68,11 @@
     transform: translate(-50%,-50%);
 }
 
-#body img{
+#homepage img{
     width: 100%;
+    height: 20%;
     object-fit: cover;
-    opacity: 0;
+    
 }
 
 #box {
@@ -117,7 +118,7 @@
     box-shadow: 4px 4px 5px silver;
    
 }
-/*End of Homepage*/
+/*End of Homepage Boxes*/
 
 /*About me Page*/
 
@@ -131,14 +132,10 @@
 .aboutRight video{
     height: auto;
     width: 100%
-    
 }
 /*End of About Me*/
 
 /*Projects Page*/
-#projects .projectItems{
-    color: white;
-}
 #projects .projectContainer h2{
     text-align: center;
 }
@@ -163,37 +160,30 @@
 /*End of Projects Page*/
 
 /*Contact Page*/
-#contact body {
-    color: white;
-    align-items: center;
-    justify-content: center;
-}
 
 #contact .contactBox {
     margin-left: 25px;
     display: block;
 }
 
-#contact .nameBox {
-    justify-content: space-between;
-
-}
 #contact form {
-    margin-left: auto;
+    display: block;
+    margin-left: 15px;
     flex-direction: column;
     align-items: center;
-    display: block;
-
+    padding: 0 20px
+}
+.nameBox input, .phoneEmail input, textarea{
+    width: 100%;
 }
 
 .contactButtons {
-    align-items: center;
-    justify-content: space-between;
+        justify-content: space-between;
         margin-left: 25px;
         padding-bottom: 20px;
-    
 }
 /*End of Contact Page*/
+
 /*Footer*/
 .footerContainer {
     align-items: center;
@@ -209,5 +199,8 @@
         padding: 10px;
     }
     
-   
+    /*Clears Floats*/
+ .clear {
+    clear: both;
+}
 }
